@@ -56,7 +56,7 @@ func main() {
 func getResult(ip string) string {
 	url := "https://x.threatbook.cn/nodev4/ip/" + ip
 	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Add("Cookie", "rememberme=3336cad4b3d1046095c8951b8b6c388ad408b3c3|caojfv@gmail.com|1599553873707")
+	req.Header.Add("Cookie", "rememberme=080fc2ab561388c55f8f0c90816c488515e30011|caojfv@gmail.com|1599553123907")
 	res, _ := http.DefaultClient.Do(req)
 	defer res.Body.Close()
 	doc, err := goquery.NewDocumentFromReader(res.Body)
